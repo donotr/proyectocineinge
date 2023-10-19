@@ -27,7 +27,8 @@ class CustomAppbar extends ConsumerWidget {
               Text('Cinemapedia', style: titleStyle ),
       
               const Spacer(),
-
+              //para hacer la barra de busqueda se ocupa la dependencia provider, aqui se manda a llamar y se ocupan las clases
+              // search movie delegate y search movie provider.
               IconButton(onPressed: () {
                 final searchedMovies = ref.read(searchedMoviesProvider);
                 final searchQuery = ref.read(searchQueryProvider);
